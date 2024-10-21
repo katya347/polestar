@@ -4,7 +4,7 @@ class ContactFormPage {
         this.nameInput = 'input[name="name"]';
         this.emailInput = 'input[name="email"]';
         this.submitButton = 'button[type="submit"]';
-        this.successMessage = '.success-message'; // Example selector for confirmation
+        this.successMessage = '.success-message'; 
     }
 
     async fillContactForm(name, email) {

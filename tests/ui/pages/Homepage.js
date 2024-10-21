@@ -1,8 +1,8 @@
 class HomePage {
     constructor(page) {
         this.page = page;
-        this.searchInput = 'input[name="q"]'; // Example selector for search
-        this.searchButton = 'button.search-button'; // Example selector for search button
+        this.searchInput = 'input[name="q"]'; 
+        this.searchButton = 'button.search-button'; 
     }
 
     async navigate() {

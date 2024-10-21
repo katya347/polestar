@@ -5,6 +5,5 @@ test('should navigate to Polestar developer portal and click login', async ({ pa
     const loginPage = new LoginPage(page);
     await loginPage.navigate();
     await loginPage.clickLogin();
-    // Add assertions
     expect(await page.url()).toContain('login');
 });

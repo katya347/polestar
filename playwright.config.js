@@ -2,11 +2,11 @@
 module.exports = {
     timeout: 60000,
     use: {
-        headless: true, // Run in headless mode by default
+        headless: true, 
         screenshot: 'on',
         video: 'retain-on-failure',
     },
-    reporter: [['list'], ['html', { open: 'never' }]], // Generates HTML reports
+    reporter: [['list'], ['html', { open: 'never' }]], 
     projects: [
         {
             name: 'Chromium',

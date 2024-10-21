@@ -2,7 +2,7 @@ class MenuNavigationPage {
     constructor(page) {
         this.page = page;
         this.menuButton = '.menu-toggle';
-        this.menuLink = 'a[href="/cars"]'; // Example selector for Cars link
+        this.menuLink = 'a[href="/cars"]'; 
     }
 
     async openMenu() {

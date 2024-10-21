@@ -1,7 +1,7 @@
 class LoginPage {
     constructor(page) {
         this.page = page;
-        this.loginButton = 'button#login'; // Example selector
+        this.loginButton = 'button#login'; 
     }
 
     async navigate() {
