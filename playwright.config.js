@@ -1,12 +1,11 @@
-// playwright.config.js
 module.exports = {
     timeout: 60000,
     use: {
-        headless: true, 
+        headless: true,
         screenshot: 'on',
         video: 'retain-on-failure',
     },
-    reporter: [['list'], ['html', { open: 'never' }]], 
+    reporter: [['list'], ['html', { open: 'never' }]],
     projects: [
         {
             name: 'Chromium',
@@ -21,4 +20,6 @@ module.exports = {
             use: { browserName: 'webkit' },
         },
     ],
+    workers: 4,
 };
+

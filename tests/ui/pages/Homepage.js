@@ -1,8 +1,14 @@
 class HomePage {
     constructor(page) {
         this.page = page;
-        this.searchInput = 'input[name="q"]'; 
-        this.searchButton = 'button.search-button'; 
+    }
+
+    get searchInput() {
+        return this.page.locator('input[name="q"]');
+    }
+
+    get searchButton() {
+        return this.page.locator('button.search-button');
     }
 
     async navigate() {
@@ -10,8 +16,8 @@ class HomePage {
     }
 
     async searchFor(keyword) {
-        await this.page.fill(this.searchInput, keyword);
-        await this.page.click(this.searchButton);
+        await this.searchInput.fill(keyword);
+        await this.searchButton.click();
     }
 }
 
